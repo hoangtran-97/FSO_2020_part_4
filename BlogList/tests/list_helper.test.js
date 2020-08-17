@@ -97,3 +97,11 @@ describe("find ", () => {
         });
     });
 });
+describe("find", () => {
+    test("author with most likes", () => {
+        expect(listHelper.mostLikes(bigList)).toEqual({
+            author: "Edsger W. Dijkstra",
+            likes: 17,
+        });
+    });
+});
